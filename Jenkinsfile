@@ -12,7 +12,6 @@ pipeline {
                 """
             }
         }
-    }
         stage('Creating Docker Container') {
             steps {
                 sh """
@@ -22,6 +21,7 @@ pipeline {
                 /var/lib/jenkins/.local/bin/docker-compose up -d --remove-orphans
                 docker ps -a
                """
+            }     
         }
     }
 }
