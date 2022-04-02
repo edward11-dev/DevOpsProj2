@@ -7,7 +7,7 @@ pipeline {
                 sh """
                 echo 'Building..'
                 docker build -t profed11/devops_proj2:latest .
-                docker login -u "eahanks11@gmail.com" -p "eR-PaE9Evrun7!Z" docker.io
+                docker login -u "profed11" -p "eR-PaE9Evrun7!Z" docker.io
                 docker push profed11/devops_proj2:latest
                 """
             }
