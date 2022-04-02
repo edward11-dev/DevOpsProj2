@@ -17,8 +17,8 @@ pipeline {
                 sh """
                 echo 'Creating Docker Container...'
                 pip install docker-compose
-                chmod +rx /var/lib/jenkins/.local/bin/docker-compose
-                /var/lib/jenkins/.local/bin/docker-compose up -d --remove-orphans
+                chmod +x /usr/local/bin/docker-compose
+                /usr/local/bin/docker-compose up -d --remove-orphans
                 docker ps -a
                """
             }     
