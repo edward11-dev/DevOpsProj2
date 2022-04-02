@@ -21,7 +21,6 @@ pipeline {
                 chmod +x /var/lib/jenkins/.local/bin/docker-compose
                 /var/lib/jenkins/.local/bin/docker-compose up -d --remove-orphans
                 docker ps -a
-                
                """
         }
     }
