@@ -13,7 +13,7 @@ pipeline {
             }
         }
     }
-    stage ('Creating Docker Container') {
+    stage('Creating Docker Container') {
         steps {
             sh """
                 echo 'Creating Docker Container...'
